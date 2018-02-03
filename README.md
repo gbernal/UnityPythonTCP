@@ -12,11 +12,11 @@ How does it work?
 -----------------
 
 The package comes with a simple echo server, written in python.
-The server runs on port 50000, it will echo back packets received and will close the connection when receiving a "quit" command.
+The server runs on port 50002, it will echo back packets received and will close the connection when receiving a "quit" command.Just type quit and press space bar in the public string in the hierchi tab
 
-Execute the server, load the "network" scene included in the Unity package and run it.
+Execute the server, load the network prefab to the scene 
 
-The program will start collecting keystrokes, and when enter is pressed it will send the string to the server.
+The program will send any strings typed in the public string space, and when pressed space bar will send the string to the server.
 When received, the server will reply accordingly.
 
 All the string transactions can be monitored in the Unity console window, since no GUI is present.
