@@ -24,7 +24,12 @@ public class networkSocket : MonoBehaviour
     void Update()
     {
         string received_data = readSocket();
-
+        if (received_data != "")
+        {
+            // Do something with the received data,
+            // print it in the log for now
+            print(received_data);
+        }
         if (Input.GetKeyDown(KeyCode.Space)) { 
 
 
@@ -33,12 +38,7 @@ public class networkSocket : MonoBehaviour
         }
 
   
-        if (received_data != "")
-        {
-        	// Do something with the received data,
-        	// print it in the log for now
-            Debug.Log(received_data);
-        }
+        
     }
 
 
